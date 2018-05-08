@@ -8,7 +8,7 @@
 import scrapy
 
 
-class QuantumnewsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+class ScienceDailyItem(scrapy.Item):
+    # Add 
+    # title = scrapy.Field()
     pass

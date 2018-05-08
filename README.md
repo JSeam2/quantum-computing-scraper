@@ -1,4 +1,4 @@
-# Quantum Technology News Scraper
+# Quantum Computing News Scraper
 This tool scrapes webpages on the internet for news and tweets related to quantum information
 
 After running scrape.py. An output file will be generated in the /output
