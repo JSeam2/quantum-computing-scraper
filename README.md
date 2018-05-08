@@ -10,16 +10,16 @@ This project runs on
 
 # To Run
 Install requirements to run
-		$ pip install -r requirements.txt 
+    $ pip install -r requirements.txt 
 
 Navigate to the quantumnews folder
-		$ cd quantumnews
+    $ cd quantumnews
 
 List the spider 
-		$ scrapy list
+    $ scrapy list
 
 Running the spiders and save output to a json file
-		$ scrapy crawl <spider name> -o	filename.json
+    $ scrapy crawl <spider name> -o	filename.json
 
 Running the spiders and save output to a csv file
-		$ scrapy crawl <spider name> -o filename.csv -t csv
+    $ scrapy crawl <spider name> -o filename.csv -t csv
