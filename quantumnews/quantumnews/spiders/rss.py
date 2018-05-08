@@ -10,9 +10,13 @@ https://news.mit.edu/rss/topic/quantum-computing
 
 
 class MitRssSpider(XMLFeedSpider):
-    name = 'mitrss'
-    allowed_domains = ['https://news.mit.edu/rss/topic/quantum-computing']
-    start_urls = ['https://news.mit.edu/rss/topic/quantum-computing']
+    name = 'rss'
+    allowed_domains = [
+        'https://news.mit.edu/rss/topic/quantum-computing',
+    ]
+    start_urls = [
+        'https://news.mit.edu/rss/topic/quantum-computing',
+    ]
     iterator = 'iternodes' # you can change this; see the docs
     itertag = 'item' # change it accordingly
 
