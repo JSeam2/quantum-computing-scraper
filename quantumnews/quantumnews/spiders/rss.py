@@ -9,7 +9,7 @@ https://news.mit.edu/rss/topic/quantum-computing
 """
 
 
-class MitRssSpider(XMLFeedSpider):
+class RssSpider(XMLFeedSpider):
     name = 'rss'
     allowed_domains = [
         'https://news.mit.edu/rss/topic/quantum-computing',
@@ -24,9 +24,9 @@ class MitRssSpider(XMLFeedSpider):
         i = {}
         self.logger.info('<{}> node: {}'.format(self.itertag, ''.join(selector.extract())))
         i = {}
-        i['title'] = selector.select('title').extract()
-        i['link'] = selector.select('link').extract()
-        i['description'] = selector.select('description').extract()
-        i['pubDate'] = selector.select('pubDate').extract()
+        i['title'] = selector.xpath('//title/text()').extract()
+        i['link'] = selector.xpath('//link/text()').extract()
+        i['description'] = selector.xpath('//description/text()').extract()
+        i['pubDate'] = selector.xpath('//pubDate/text()').extract()
 
         return i
